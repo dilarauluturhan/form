@@ -1,3 +1,9 @@
+import { MoveUpRight } from "lucide-react";
+
 export default function Home() {
-  return <h1 className="text-4xl">Home</h1>;
+  return (
+    <div>
+      <MoveUpRight size={48} strokeWidth={2.25} />
+    </div>
+  );
 }

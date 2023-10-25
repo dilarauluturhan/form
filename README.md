@@ -1,3 +1,6 @@
+![](https://github.com/dilarauluturhan/form/assets/120499369/95ab9c4a-bbc9-494d-9fb5-8f7b747d4e28)
+![](https://github.com/dilarauluturhan/form/assets/120499369/30db6732-355f-4b45-9f34-2159593ce8ef)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
