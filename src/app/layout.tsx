@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="h-screen flex flex-col justify-center items-center">
+        <main className="h-screen flex flex-col justify-center items-center bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900">
           <Navbar />
           {children}
         </main>
