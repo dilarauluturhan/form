@@ -15,6 +15,8 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import Link from "next/link";
 import GoogleLogin from "../GoogleLogin";
+import { useRouter } from "next/navigation";
+import { useToast } from "../ui/use-toast";
 
 const FormSchema = z
   .object({
@@ -35,6 +37,8 @@ const FormSchema = z
   });
 
 const Signup = () => {
+  const router = useRouter();
+  const { toast } = useToast();
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -45,8 +49,27 @@ const Signup = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof FormSchema>) => {
-    console.log(values);
+  const onSubmit = async (values: z.infer<typeof FormSchema>) => {
+    const response = await fetch("/api/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: values.username,
+        email: values.email,
+        password: values.password,
+      }),
+    });
+
+    if (response.ok) {
+      router.push("/login");
+    } else {
+      toast({
+        title: "Error",
+        description: "Oops! Something went wrong!",
+      });
+    }
   };
 
   return (
