@@ -1,39 +1,41 @@
-![](https://github.com/dilarauluturhan/form/assets/120499369/95ab9c4a-bbc9-494d-9fb5-8f7b747d4e28)
-![](https://github.com/dilarauluturhan/form/assets/120499369/30db6732-355f-4b45-9f34-2159593ce8ef)
+<div align="center">
+  <h1 align="center">LOGIN/SIGNUP FORM</h1>
+</div>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About The Project
+![202310270044](https://github.com/dilarauluturhan/form/assets/120499369/4a803b06-8daf-458c-af31-8197fafc935c)
 
+## Features
+**Form validation** application where the user can sign up and log in.
+
+## Built With
+- **Nextjs**: For create user interface.
+- **Shadcn UI**: For create style.
+- **TypeScript**: For develop static typed JavaScript.
+- **NextAuth**: It is used for authentication and authorization processes. Provides user session management in Next.js projects.
+- **Prisma**: Performs database management operations with Prisma CLI.
+- **Supabase**: Supabase supports real-time database updates. It offers a set of services that provide developers with the basic database functionality needed to quickly build applications.
+- **React-Hook-Form**: It is used to facilitate form management. Manages and verifies form transactions.
+- **Zod**: It is used for schema validation operations. Checks the accuracy of incoming data.
+- **lucide-react**: For show icons in the user interface.
+- **bcrpyt**: For hash passwords securely.
+  
 ## Getting Started
+To get the project up and running on your local machine, follow these steps:
 
-First, run the development server:
-
-```bash
+Clone the repository:
+````
+git clone https://github.com/dilarauluturhan/form.git
+````
+Go to the project directory:
+````
+cd form
+````
+Start the application:
+````
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+````
+Go to `http://localhost:3000` in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact With
+Dilara Uluturhan - [LinkedIn](https://www.linkedin.com/in/dilarauluturhan/) - dilarauluturhan@outlook.com
