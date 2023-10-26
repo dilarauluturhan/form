@@ -14,7 +14,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import Link from "next/link";
-import GoogleLogin from "../GoogleLogin";
 import { useRouter } from "next/navigation";
 import { useToast } from "../ui/use-toast";
 
@@ -141,10 +140,6 @@ const Signup = () => {
           Sign up
         </Button>
       </form>
-      <div className="mx-auto my-4 flex w-full items-center justify-evenly before:mr-4 before:block before:h-px before:flex-grow before:bg-zinc-400 after:ml-4 after:block after:h-px after:flex-grow after:bg-zinc-400">
-        or
-      </div>
-      <GoogleLogin>Sign up with Google</GoogleLogin>
       <p className="text-center text-md text-gray-600 mt-5">
         Already have an account?
         <Link className="text-blue-500 hover:underline ml-1" href="/login">
